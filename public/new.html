@@ -3,10 +3,25 @@
   <head>
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-    <script src="app.js"></script>
-    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <title>chat app</title>
   </head>
   <body>
-    <h1>This is a web socket project</h1>
+    <h1>Chat App</h1>
+    <div id="chatdiv">
+     <div id="output-message">
+     </div>
+     <p id="typing-message">one two</p>
+     <div>
+       <p class="handle-text">Ur Handle Name</p>
+       <input id ="handle" class ="handle-class"></input>
+     </div>
+     <div>
+       <p class="handle-text message-text">Ur Message</p>
+       <input id ="message" class="message-class handle-class"></input>
+     </div>
+     <button id="send">Send</button>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
