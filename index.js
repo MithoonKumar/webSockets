@@ -14,4 +14,7 @@ io.on('connection', function(socket){
       io.sockets.emit('chat',data);
       console.log("emitted a messge from the server");
     });
+    socket.on('typing',function(data){
+      socket.broadcast.emit('typing',data);
+    });
 });
